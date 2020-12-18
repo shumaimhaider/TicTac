@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  <audio controls>
+  <source src="Carrie Underwood - The Champion ft. Ludacris.ogg" type="audio/ogg">
+  <source src="Carrie Underwood - The Champion ft. Ludacris.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+   
+   
+</head>
+<body>
+    
+    <h1>Tic Tac Toe</h1>
+
+    <div id="container">
+        <h3 id="status"></h3>
+        <table id="board">
+            <tr class="row">
+                <td id="cell" cell-index="0"></td>
+                <td id="cell" cell-index="1"></td>
+                <td id="cell" cell-index="2"></td>
+            </tr>
+            <tr class="row">
+                <td id="cell" cell-index="3"></td>
+                <td id="cell" cell-index="4"></td>
+                <td id="cell" cell-index="5"></td>
+            </tr>
+            <tr class="row">
+                <td id="cell" cell-index="6"></td>
+                <td id="cell" cell-index="7"></td>
+                <td id="cell" cell-index="8"></td>
+            </tr>
+        </table>
+
+        <div id="final-screen">
+            <div id="winner"></div>
+            <br>
+            <a href="" id="new-game">Play Again</a>
+        </div>
+        <div id="choice">
+            <button onclick="userInput('X')">X</button>
+            <button onclick="userInput('O')">O</button>
+        </div>
+
+    </div>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/messages.js"></script>
+    <script src="./scripts/win-moves.js"></script>
+    <script src="./scripts/validate-result.js"></script>
+</body>
+</html>
+
+<footer>
+    <p class="center">Created By Shumaim Salman Zeeshan
+    </p>
+</footer>
